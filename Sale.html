@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>AdminLTE 3 | Dashboard</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="dist/css/font-awesome.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="dist/css/adminlte.min.css">
+    <link rel="stylesheet" href="dist/css/manage-customers.css">
+
+    <!-- Google Font: Source Sans Pro -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+</head>
+<body class="hold-transition sidebar-mini">
+<div class="wrapper">
+
+    <!-- Navbar -->
+    <nav class="main-header navbar navbar-expand bg-white navbar-light border-bottom">
+        <!-- Left navbar links -->
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" data-widget="pushmenu" href="#"><i class="fa fa-bars"></i></a>
+            </li>
+        </ul>
+
+    </nav>
+    <!-- /.navbar -->
+
+    <!-- Main Sidebar Container -->
+    <aside class="main-sidebar sidebar-dark-primary elevation-4">
+        <!-- Brand Logo -->
+        <a href="#" class="brand-link text-center">
+            <span class="brand-text font-weight-light">Udara Battery Sales</span>
+        </a>
+
+        <!-- Sidebar -->
+        <div class="sidebar">
+
+            <!-- Sidebar Menu -->
+            <nav class="mt-2">
+                <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu"
+                    data-accordion="false">
+                    <!-- Add icons to the links using the .nav-icon class
+                         with font-awesome or any other icon font library -->
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">
+                            <i class="nav-icon fa fa-dashboard"></i>
+                            <p>
+                                Dashboard
+                            </p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Customer.html" class="nav-link ">
+                            <i class="nav-icon fa fa-users"></i>
+                            <p>
+                                Manage Customers
+                            </p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Item.html" class="nav-link">
+                            <i class="nav-icon fa fa-sitemap"></i>
+                            <p>
+                                Manage Items
+                            </p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Sale.html" class="nav-link active">
+                            <i class="nav-icon fa fa-shopping-cart"></i>
+                            <p>
+                                Place Orders
+                            </p>
+                        </a>
+                    </li>
+                    <!--<li class="nav-item">-->
+                        <!--<a href="#" class="nav-link">-->
+                            <!--<i class="nav-icon fa fa-list"></i>-->
+                            <!--<p>-->
+                                <!--View Orders-->
+                            <!--</p>-->
+                        <!--</a>-->
+                    <!--</li>-->
+                </ul>
+            </nav>
+            <!-- /.sidebar-menu -->
+        </div>
+        <!-- /.sidebar -->
+    </aside>
+
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <div class="content-header">
+            <div class="container-fluid">
+                <div class="row mb-2">
+                    <div class="col-sm-6">
+                        <h1 class="m-0 text-dark">Battery Sale</h1>
+                    </div><!-- /.col -->
+                    <div class="col-sm-6">
+                        <ol class="breadcrumb float-sm-right">
+                            <li class="breadcrumb-item"><a href="#">Home</a></li>
+                            <li class="breadcrumb-item active">Battery Sale</li>
+                        </ol>
+                    </div><!-- /.col -->
+                </div><!-- /.row -->
+            </div><!-- /.container-fluid -->
+        </div>
+        <!-- /.content-header -->
+
+        <!-- Main content -->
+        <section class="content">
+            <div class="row">
+                <div class="col col-md-6 col-12">
+                    <form id="customerform" >
+                        <br>
+                        &nbsp;&nbsp;
+                        <label>
+                            Order ID
+                        </label>
+                        &nbsp;&nbsp;
+                        <input type="text" name="ordID" id="oid" class="form-control">
+                        <br>
+                        &nbsp;&nbsp;
+                        <label>
+                            Order date
+                        </label>
+                        &nbsp;&nbsp;
+                        <input type="date" name="ordDate" id="odate" class="form-control">
+                        <br>
+                        &nbsp;&nbsp;
+                        <label>
+                            Customer ID
+                        </label>
+                        &nbsp;&nbsp;
+                        <select class="form-control" name="cusID" id="cid" class="form-control">
+
+                        </select>
+                        <br>
+                        &nbsp;&nbsp;
+                        <label>
+                            Customer Name
+                        </label>
+                        &nbsp;&nbsp;
+                        <input type="text" name="customerName" id="customerName" class="form-control">
+                        <br>
+                        &nbsp;&nbsp;
+                        <label>
+                            Customer Contact
+                        </label>
+                        &nbsp;&nbsp;
+                        <input type="text" name="cusContact" id="ccontact" class="form-control">
+                        <br>
+                        &nbsp;&nbsp;
+                            <label>
+                                Battery Code
+                            </label>
+                        &nbsp;&nbsp;
+                        <select class="form-control" name="batCode" id="batteryCode" class="form-control">
+
+                        </select>
+                            <!--<input type="text" name="batCode" id="batteryCode">-->
+                            <br>
+                        &nbsp;&nbsp;
+                            <label>
+                                Battery Type
+                            </label>
+                        &nbsp;&nbsp;
+                            <input type="text" name="batType" id="batteryType" class="form-control">
+                            <br>
+                        &nbsp;&nbsp;
+                            <label>
+                                Battery Category
+                            </label>
+                        &nbsp;&nbsp;
+                            <input type="text" name="batCat" id="batteryCat" class="form-control">
+                            <br>
+                        &nbsp;&nbsp;
+                            <label>
+                                Battery Price
+                            </label>
+                        &nbsp;&nbsp;
+                            <input type="text" name="batPrice" id="batteryPrice" class="form-control">
+                        <br>
+                        &nbsp;&nbsp;
+                        <button type="button" id="btnsaveorder">Save</button>
+                        <br>
+                        <br>
+                        <button type="button" id="btnplaceorder">
+                            Place Order
+                        </button>
+                    </form>
+
+                </div>
+                <div class="col col-md-6 col-12">
+                    <table id="tblOrder" class="table table-bordered table-hover">
+                        <thead>
+                        <tr>
+                            <th>Code</th>
+                            <th>Type</th>
+                            <th>Category</th>
+                            <th>Price</th>
+                            <th></th>
+                        </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                    <br>
+                    <label>Total</label>
+                    <input type="text" name="textstotal" id="textTotal" >
+                    <br>
+                    <br>
+                    &nbsp;&nbsp;
+
+                </div>
+            </div>
+        </section>
+        <!-- /.content -->
+    </div>
+    <!-- /.content-wrapper -->
+    <footer class="main-footer">
+        <strong>Copyright &copy; 2018 <a href="http://ijse.lk">IJSE</a>.</strong>
+        All rights reserved.
+        <div class="float-right d-none d-sm-inline-block">
+            <b>Version</b> 1.0.0
+        </div>
+    </footer>
+
+    <!-- Control Sidebar -->
+    <aside class="control-sidebar control-sidebar-dark">
+        <!-- Control sidebar content goes here -->
+    </aside>
+    <!-- /.control-sidebar -->
+</div>
+<!-- ./wrapper -->
+<!--<script src="js/jquery.js"></script>-->
+<!--<script src="js/javascipt/manage-customers-controller.js"></script>-->
+<script src="dist/js/plugins/jquery/jquery.js"></script>
+<!-- jQuery UI 1.11.4 -->
+<script src="dist/js/plugins/jQueryUI/jquery-ui.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="dist/js/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- AdminLTE App -->
+<script src="dist/js/adminlte.js"></script>
+<script src="dist/js/controller/manage-order-controller.js"></script>
+</body>
+</html>
